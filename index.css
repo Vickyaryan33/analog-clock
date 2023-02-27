@@ -1,0 +1,164 @@
+.layout {
+  color: rgb(240, 187, 96);
+  text-decoration: solid;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 4%,
+    rgb(129 72 74) 15%,
+    rgb(130 82 83) 24%,
+    rgba(0, 0, 0, 0.65) 42%,
+    rgb(188 116 118) 54%,
+    rgb(195 114 116) 55%,
+    rgb(108 61 63) 82%,
+    rgb(86 4 9) 95%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
+#clockContainer {
+  display: flex;
+  position: relative;
+  margin: auto;
+  height: 40vw;
+  width: 40vw;
+  background: url(/img/clock.png) no-repeat;
+  background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(180, 221, 180, 1) 0%,
+    rgba(131, 199, 131, 1) 17%,
+    rgba(82, 177, 82, 1) 33%,
+    rgba(0, 138, 0, 1) 67%,
+    rgba(0, 87, 0, 1) 83%
+  );
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+#hour {
+  width: 1.8%;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+  opacity: 0.8;
+}
+#minute {
+  width: 1.6%;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+  opacity: 0.8;
+}
+#second {
+  width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.25%;
+  opacity: 0.8;
+}
+
+#heading {
+  color: rgb(44, 29, 2);
+  text-decoration: solid;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 4%,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.22) 24%,
+    rgba(0, 0, 0, 0.65) 42%,
+    rgba(0, 0, 0, 0.65) 54%,
+    rgba(0, 0, 0, 0.65) 55%,
+    rgba(0, 0, 0, 0) 82%,
+    rgba(0, 0, 0, 0.65) 95%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  display: flex;
+  margin-bottom: 0.2rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 12vh;
+  font-size: 25px;
+}
+body #footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(189, 136, 71);
+    height: 12vh;
+    font-size: 15px;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65) 4%,
+        rgba(0, 0, 0, 0) 15%,
+        rgba(0, 0, 0, 0.22) 24%,
+        rgba(0, 0, 0, 0.65) 42%,
+        rgba(0, 0, 0, 0.65) 54%,
+        rgba(0, 0, 0, 0.65) 55%,
+        rgba(0, 0, 0, 0) 82%,
+        rgba(0, 0, 0, 0.65) 95%,
+        rgba(0, 0, 0, 0.65) 100%
+      );
+  }
+
+
+@media only screen and (max-width: 390px) {
+  body {
+    background: linear-gradient(
+      to right,
+      rgb(255 255 255) 4%,
+      rgb(245 245 245) 15%,
+      rgb(68 42 43) 24%,
+      rgb(133 79 81) 42%,
+      rgb(99 61 62) 54%,
+      rgb(123 66 68) 55%,
+      rgb(104 37 39) 82%,
+      rgb(255 255 255) 95%,
+      rgb(255 255 255) 100%
+    );
+  }
+  body #heading {
+    font-size: 11px;
+    font-style: italic;
+    height: 15vh;
+    color: rgb(245 245 245);
+    background: linear-gradient(
+      to right,
+      rgb(255 255 255) 4%,
+      rgb(245 245 245) 15%,
+      rgb(68 42 43) 24%,
+      rgb(133 79 81) 42%,
+      rgb(99 61 62) 54%,
+      rgb(123 66 68) 55%,
+      rgb(104 37 39) 82%,
+      rgb(255 255 255) 95%,
+      rgb(255 255 255) 100%
+    );
+  }
+
+  body #imageContainer {
+    display: flex;
+    position: relative;
+    margin: 4vh 32vw;
+
+    height: 40vw;
+    width: 40vw;
+    background: url(/img/vicky.jpg) no-repeat;
+    background-size: 100%;
+  }
+  body #footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: bisque;
+    height: 0vh;
+    font-size: 15px;
+    z-index:3;
+  }
+}
