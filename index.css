@@ -20,7 +20,7 @@
   margin: auto;
   height: 40vw;
   width: 40vw;
-  background: url(/img/clock.png) no-repeat;
+  background: url(img/clock.png) no-repeat;
   background-size: 100%;
 }
 
@@ -148,7 +148,7 @@ body #footer {
 
     height: 40vw;
     width: 40vw;
-    background: url(/img/vicky.jpg) no-repeat;
+    background: url(img/vicky.jpg) no-repeat;
     background-size: 100%;
   }
   body #footer {
