@@ -107,7 +107,7 @@ body #footer {
   }
 
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
   body {
     background: linear-gradient(
       to right,
